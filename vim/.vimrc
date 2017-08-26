@@ -1,6 +1,9 @@
+execute pathogen#infect()
+
 " Color {{{
 syntax on
-set t_Co=256
+set background=dark
+colorscheme solarized
 " }}}
 
 " Spaces Tabs {{{
@@ -45,7 +48,6 @@ nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 " }}}
 
-execute pathogen#infect()
 
 " Synatasitc {{{
 map <Leader>s :SyntasticToggleMode<CR>

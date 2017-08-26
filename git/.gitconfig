@@ -8,8 +8,8 @@
 	ls = log --pretty=format:\"%C(yellow)%h%Cred%d %Creset%s %Cgreen[%cn]\" --decorate
     graph = log --branches --pretty=short --graph --decorate 
 [core]
-	excludesfile = /Users/siefker/.gitignore
-	editor = /usr/local/bin/vim
+	excludesfile = ~/.gitignore
+	editor = /usr/bin/vim
 [color]
 	ui = true
 [push]
