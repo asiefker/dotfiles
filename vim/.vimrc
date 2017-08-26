@@ -1,3 +1,4 @@
+let mapleader=","       " leader is comma
 execute pathogen#infect()
 
 " Color {{{
@@ -7,6 +8,7 @@ colorscheme solarized
 " }}}
 
 " Spaces Tabs {{{
+set showcmd
 set autoindent " pervious line indent on next line
 set tabstop=4 " spaces per tab
 set softtabstop=4
@@ -40,8 +42,7 @@ nnoremap <leader><space> :nohlsearch<CR>
 set history=1000
 
 " Leader Bindings {{{
-let mapleader=","       " leader is comma
-inoremap jk <esc>
+inoremap jj <esc>
 " edit vimrc/zshrc and load vimrc bindings
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>ez :vsp ~/.zshrc<CR>
