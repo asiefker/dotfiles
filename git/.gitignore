@@ -1,0 +1,5 @@
+.settings
+lib_managed
+.cache
+target
+.worksheet

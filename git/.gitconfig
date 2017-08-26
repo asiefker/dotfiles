@@ -1,0 +1,16 @@
+[user]
+	name = Adam Siefker
+	email = siefker@gmail.com
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	ls = log --pretty=format:\"%C(yellow)%h%Cred%d %Creset%s %Cgreen[%cn]\" --decorate
+    graph = log --branches --pretty=short --graph --decorate 
+[core]
+	excludesfile = /Users/siefker/.gitignore
+	editor = /usr/local/bin/vim
+[color]
+	ui = true
+[push]
+	default = simple
