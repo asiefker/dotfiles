@@ -117,4 +117,5 @@ let g:rustfmt_autosave = 1
 let g:notes_directories = ['~/Documents/Notes']
 "}}}
 set modelines=1
+set modeline
 " vim:foldmethod=marker:foldlevel=0
