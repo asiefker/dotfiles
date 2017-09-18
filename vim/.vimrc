@@ -26,7 +26,7 @@ set showmatch " highlight matching ( etc
 set nowrap " don't wrap long lines 
 set showmode " shows the mode vi is in
 set mouse=a " enable mouse actions 
-set clipboard=unnamed,autoselect " past into defaut register
+" set clipboard=unnamed,autoselect " past into defaut register
 " ignore filetype when exnading globs etc. 
 set wildignore+=*\\tmp\\*,*.swp,*.swo,*.zip,.git,.cabal-sandbox
 set hidden " Switch bufferes w/o saving. 
@@ -51,16 +51,18 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 
 
 " Synatasitc {{{
-map <Leader>s :SyntasticToggleMode<CR>
+if !has('nvim')
+    map <Leader>s :SyntasticToggleMode<CR>
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
+    let g:syntastic_always_populate_loc_list = 1
+    let g:syntastic_auto_loc_list = 0
+    let g:syntastic_check_on_open = 0
+    let g:syntastic_check_on_wq = 0
+endif 
 " }}}
 
 " ghc-mod {{{
