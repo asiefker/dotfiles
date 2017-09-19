@@ -113,6 +113,16 @@ let g:ctrlp_custom_ignore = '\v[\/]dist$'
 
 " {{{Rust
 let g:rustfmt_autosave = 1
+if executable('rls')     
+    au User lsp_setup call lsp#register_server({
+        \ 'name':'rls', 
+        \ 'cmd': {server_info->['rustup', 'run', 'nightly', 'rls']}, 
+        \ 'whitelist': ['rust'],         
+        \ }) 
+endif
+let g:lsp_log_verbose = 1
+let g:lsp_log_file = expand('~/vim-lsp.log')
+let g:asyncomplete_log_file = expand('~asyncomplete.log')
 " }}}
 
 " {{{Notes
