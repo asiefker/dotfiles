@@ -3,3 +3,4 @@ lib_managed
 .cache
 target
 .worksheet
+*log
