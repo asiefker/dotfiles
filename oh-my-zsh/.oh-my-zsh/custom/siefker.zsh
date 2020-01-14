@@ -1,3 +1,3 @@
 setopt nobeep
 
-#path+=('~/
+path+=('/home/vagrant/.bin')

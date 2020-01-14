@@ -1,3 +1,4 @@
+set noerrorbells
 let mapleader=","       " leader is comma
 execute pathogen#infect()
 
