@@ -14,3 +14,6 @@
 	ui = true
 [push]
 	default = simple
+
+[credential "https://github.com/"]
+    helper=cache
